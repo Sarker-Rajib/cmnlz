@@ -1,0 +1,116 @@
+.banner {
+    min-height: 820px;
+    background: url(../images/bg2.png) no-repeat top left/cover;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 162px;
+
+    @media(max-width:767px) {
+        padding-bottom: 390px;
+    }
+
+
+    .image-div {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 888;
+        text-align: right;
+        height: 100%;
+
+        @media(min-width: 1600px) {
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .inner-body {
+        padding-top: 140px;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 990;
+
+        @media(max-width:767px) {
+            padding-top: 230px;
+        }
+
+        .content-wrapper {
+            min-height: 325px;
+            border-radius: 10px;
+            padding: 10px;
+            background: #0b0d0dea;
+            color: #dcd1d7;
+            text-transform: uppercase;
+
+            .heading {
+                font-size: 30px;
+                padding-bottom: 15px;
+            }
+
+            .s-para {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .banner-foot {
+        padding: 20px 0;
+        background: #122522f5;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 990;
+
+        @media(min-width:1600px) {
+            z-index: 777;
+        }
+
+        .foot-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            color: #d4cacf;
+
+            @media(max-width:767px) {
+                grid-template-columns: 1fr;
+                padding-left: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                color: #d4cacf;
+                font-size: 16px;
+            }
+
+            .middle {
+                @media(min-width:768px) {
+                    padding-left: 50px;
+                    margin-right: 50px;
+                    border-right: 2px solid #2a4945;
+                    border-left: 2px solid #2a4945;
+                }
+            }
+        }
+    }
+}
+
+.w-container {
+    max-width: 780px;
+    margin: 0 5px;
+
+    @media(min-width:768px) {
+        margin: auto;
+    }
+
+    @media(min-width:1200px) {
+        margin-left: 220px;
+    }
+
+    @media(min-width:1400px) {
+        margin: auto;
+    }
+}

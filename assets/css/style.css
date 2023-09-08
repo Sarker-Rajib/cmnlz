@@ -1,0 +1,221 @@
+/*=== abstracts css start === */
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  color: #e7dce2;
+  background: #000;
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header .navbar-toggler {
+  background: #e7dce2;
+}
+.header .wrapper {
+  border-radius: 10px;
+  background: #0b0d0d;
+  padding: 10px;
+}
+.header .wrapper .navbar-brand p {
+  font-family: "Urbanist", sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #e7dce2;
+  line-height: 0.9;
+}
+.header .wrapper .nav-link {
+  font-size: 22px;
+  color: #e7dce2;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .header .wrapper .nav-link {
+    padding-block: 0px;
+  }
+}
+.header .wrapper .nav-link:hover {
+  color: #3a7258;
+}
+.header .wrapper .nav-link.active {
+  color: #3a7258;
+}
+.header .wrapper input {
+  border: 2px solid #1a2a27;
+  border-radius: 5px;
+  background: rgba(18, 37, 34, 0.7176470588);
+  font-size: 18px;
+  color: #dcd1d7;
+}
+.header .wrapper .login-btn {
+  border: 2px solid #1a2a27;
+  border-radius: 5px;
+  background: rgba(18, 37, 34, 0.7176470588);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 12px;
+}
+
+.footer {
+  background: #0b0d0d;
+  padding: 20px 0;
+}
+.footer p {
+  color: #d4cacf;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 18px;
+  }
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+.banner {
+  min-height: 820px;
+  background: url(../images/bg2.png) no-repeat top left/cover;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 162px;
+}
+@media (max-width: 767px) {
+  .banner {
+    padding-bottom: 390px;
+  }
+}
+.banner .image-div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 888;
+  text-align: right;
+  height: 100%;
+}
+@media (min-width: 1600px) {
+  .banner .image-div img {
+    height: 100%;
+  }
+}
+.banner .inner-body {
+  padding-top: 140px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 990;
+}
+@media (max-width: 767px) {
+  .banner .inner-body {
+    padding-top: 230px;
+  }
+}
+.banner .inner-body .content-wrapper {
+  min-height: 325px;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(11, 13, 13, 0.9176470588);
+  color: #dcd1d7;
+  text-transform: uppercase;
+}
+.banner .inner-body .content-wrapper .heading {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.banner .inner-body .content-wrapper .s-para {
+  font-size: 18px;
+}
+.banner .banner-foot {
+  padding: 20px 0;
+  background: rgba(18, 37, 34, 0.9607843137);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 990;
+}
+@media (min-width: 1600px) {
+  .banner .banner-foot {
+    z-index: 777;
+  }
+}
+.banner .banner-foot .foot-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  color: #d4cacf;
+}
+@media (max-width: 767px) {
+  .banner .banner-foot .foot-content {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+  }
+}
+.banner .banner-foot .foot-content h2 {
+  font-size: 20px;
+}
+.banner .banner-foot .foot-content a {
+  color: #d4cacf;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .banner .banner-foot .foot-content .middle {
+    padding-left: 50px;
+    margin-right: 50px;
+    border-right: 2px solid #2a4945;
+    border-left: 2px solid #2a4945;
+  }
+}
+
+.w-container {
+  max-width: 780px;
+  margin: 0 5px;
+}
+@media (min-width: 768px) {
+  .w-container {
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .w-container {
+    margin-left: 220px;
+  }
+}
+@media (min-width: 1400px) {
+  .w-container {
+    margin: auto;
+  }
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */
